@@ -366,9 +366,9 @@ void render_hud_timer(void) {
  * Sets HUD status camera value depending of the actions
  * defined in update_camera_status.
  */
-void set_hud_camera_status(s16 status) {
-    sCameraHUD.status = status;
-}
+//void set_hud_camera_status(s16 status) {
+    //sCameraHUD.status = status;
+
 
 /**
  * Renders camera HUD glyphs using a table list, depending of

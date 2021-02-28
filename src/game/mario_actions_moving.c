@@ -843,7 +843,7 @@ s32 act_move_punching(struct MarioState *m) {
     }
 
     if (m->actionState == 0 && (m->input & INPUT_A_DOWN)) {
-        return set_mario_action(m, ACT_JUMP_KICK, 0);
+        return set_mario_action(m, ACT_DIVE, 0);
     }
 
     m->actionState = 1;
@@ -1460,7 +1460,7 @@ s32 act_crouch_slide(struct MarioState *m) {
         m->actionTimer++;
         if (m->input & INPUT_A_PRESSED) {
             if (m->forwardVel > 10.0f) {
-                return set_jumping_action(m, ACT_LONG_JUMP, 0);
+                //return set_jumping_action(m, ACT_LONG_JUMP, 0);
             }
         }
     }

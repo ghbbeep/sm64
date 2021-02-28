@@ -3902,7 +3902,7 @@ s32 update_camera_hud_status(struct Camera *c) {
     if (gCameraMovementFlags & CAM_MOVE_C_UP_MODE) {
         status |= CAM_STATUS_C_UP;
     }
-    set_hud_camera_status(status);
+    //set_hud_camera_status(status);
     return status;
 }
 
